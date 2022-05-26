@@ -33,12 +33,10 @@ public class HomeController {
 		projects[1].setUrl("a");
 		
 		projects[2] = new Project();
-		projects[2].setName("Hola Hola");
-		projects[2].setSummary("Language");
-		projects[2].setImgSrc("img/hola.png");
+		projects[2].setName("blogJS");
+		projects[2].setSummary("A simpleBlog developed in JavaScript");
+		projects[2].setImgSrc("img/blogjs.png");
 		projects[2].setUrl("https://github.com/Benrhu");
-
-		Collections.reverse(Arrays.asList(projects)); 
 
 		model.addAttribute("projects", projects);
 		return "home";

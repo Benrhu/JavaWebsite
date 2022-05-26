@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="sections/head :: head">
+<head th:replace="fragments/head :: head">
 </head>
 <body>
-    <header th:replace="sections/header :: header">
+    <header th:replace="fragments/header :: header">
     </header>
     
     <main role="main">
@@ -20,17 +20,17 @@
 		    
 		    <!-- Cards -->
 		    <div class="card-deck">
-		        <div class="col-md-4" th:each="projectData : ${projects}" th:include="sections/project :: project"
+		        <div class="col-md-4" th:each="projectData : ${projects}" th:include="fragments/project :: project"
 	                th:with="projectData=${projectData}">
 				</div>
 			</div>
 		</div>
     </main>
     
-    <footer th:replace="sections/footer :: footer">
+    <footer th:replace="fragments/footer :: footer">
 	</footer>
 
-    <span th:replace="sections/scripts :: scripts">
+    <span th:replace="fragments/scripts :: scripts">
     </span>
 </body>
 </html>
