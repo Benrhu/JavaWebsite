@@ -1,4 +1,4 @@
-package de.npruehs.website.models;
+package es.Benrhu.website.models;
 
 public class Project {
 	private String name;
