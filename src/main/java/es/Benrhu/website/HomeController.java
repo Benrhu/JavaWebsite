@@ -18,18 +18,18 @@ public class HomeController {
 	
 	@GetMapping("/home")
 	public String home(Model model) {
-		Project[] projects = new Project[5];
+		Project[] projects = new Project[3];
 
 		projects[0] = new Project();
 		projects[0].setName("Ovenex");
 		projects[0].setSummary("Oven Java Sofware");
-		projects[0].setImgSrc("img/ovenex.png");
+		projects[0].setImgSrc("img/Ovenex.jpg");
 		projects[0].setUrl("https://github.com/Benrhu");
 		
 		projects[1] = new Project();
 		projects[1].setName("e-Learning Forum");
 		projects[1].setSummary("Forum in Java");
-		projects[1].setImgSrc("img/forum.png");
+		projects[1].setImgSrc("img/elearning.jpg");
 		projects[1].setUrl("a");
 		
 		projects[2] = new Project();
@@ -37,18 +37,6 @@ public class HomeController {
 		projects[2].setSummary("Language");
 		projects[2].setImgSrc("img/hola.png");
 		projects[2].setUrl("https://github.com/Benrhu");
-		
-		projects[3] = new Project();
-		projects[3].setName("FreudBot");
-		projects[3].setSummary("Unity, game, C#, mobile, localization, test automation, gameplay");
-		projects[3].setImgSrc("img/freudbot.png");
-		projects[3].setUrl("a");
-
-		projects[4] = new Project();
-		projects[4].setName("EMERGENCY HQ");
-		projects[4].setSummary("Unity, game, C#, online, frontend, mobile, UI, billing");
-		projects[4].setImgSrc("img/emhq.png");
-		projects[4].setUrl("https://apps.apple.com/us/app/emergency-hq/id859148736");
 
 		Collections.reverse(Arrays.asList(projects)); 
 
